@@ -1,0 +1,23 @@
+{
+  "name": "sample-node-ow-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.js",
+    "deploy": "wsk action create simple-date-action dist/index.js -i --kind nodejs:10 --apihost localhost --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP",
+    "update": "wsk action update simple-date-action dist/index.js -i --kind nodejs:10 --apihost localhost --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP",
+    "invoke": "wsk action invoke --result simple-date-action -i --apihost localhost --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
