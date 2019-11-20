@@ -13,7 +13,7 @@ Sample OpenWhisk Nodejs Action
 1. Clone this repo
 2. `npm install` (within the repo)
 3. `npm run deploy`: bundles* then deploys the action (from `dist/index`) to the OpenWhisk instance from the local setup above
-4. `npm run invoke`: bundles* invokes the action after successful deployment
-5. If you make updates to the action, or want to deploy it again, use `npm run update` (instead of `deploy`)
+4. `npm run invoke`: invokes the action after successful deployment
 
 > *bundles index.js including all required dependecies into `dist/index.js`
+
